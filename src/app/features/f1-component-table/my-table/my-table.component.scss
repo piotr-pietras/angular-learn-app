@@ -20,7 +20,11 @@ tr {
   border-collapse: collapse;
 }
 
-tr:hover {
+tr:nth-of-type(odd) {
   background-color: rgb(240, 240, 240);
+}
+
+tr:hover {
+  background-color: rgb(250, 240, 210);
   cursor: pointer;
 }
