@@ -1,0 +1,15 @@
+<mat-card
+  ><h1>Feature 2 ⛓</h1>
+  <p>Angular core routing</p>
+  <div class="button-container">
+    <button
+      mat-raised-button
+      [routerLink]="link.to"
+      [queryParams]="link.query"
+      *ngFor="let link of links"
+    >
+      {{ link.to }}?{{ link.query | json }}
+    </button>
+  </div>
+  <router-outlet></router-outlet>
+</mat-card>
