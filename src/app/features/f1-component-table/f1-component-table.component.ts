@@ -11,6 +11,10 @@ const DATA = [
   { name: 'Ania', surname: 'Duża', sex: 'female', phoneNumber: 123123123 },
   { name: 'Marek', surname: 'Brzydki', sex: 'male', phoneNumber: 123123123 },
   { name: 'Klaudia', surname: 'Mała', sex: 'female', phoneNumber: 123123123 },
+  { name: 'Piotr', surname: 'Super', sex: 'male', phoneNumber: 123123123 },
+  { name: 'Kasia', surname: 'Bogata', sex: 'female', phoneNumber: 123123123 },
+  { name: 'Antek', surname: 'Mądry', sex: 'male', phoneNumber: 123123123 },
+  { name: 'Ala', surname: 'Biedna', sex: 'female', phoneNumber: 123123123 },
 ] as any[];
 
 @Component({

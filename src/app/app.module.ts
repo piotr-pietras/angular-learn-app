@@ -7,16 +7,17 @@ import { BasicsComponent } from './features/f1-component-table/f1-component-tabl
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
-import { MyTableComponent } from './features/f1-component-table/my-table/my-table.component';
+import { MyTableModule } from './features/f1-component-table/my-table/my-table.module';
 
 @NgModule({
-  declarations: [AppComponent, BasicsComponent, MyTableComponent],
+  declarations: [AppComponent, BasicsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
     MatTableModule,
+    MyTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
