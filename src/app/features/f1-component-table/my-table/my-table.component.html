@@ -7,7 +7,7 @@
     </td>
   </tr>
 
-  <tr *ngFor="let row of sortedData">
+  <tr *ngFor="let row of filteredData">
     <td *ngFor="let d of row">
       <div class="content">
         {{ d }}
@@ -15,3 +15,7 @@
     </td>
   </tr>
 </table>
+<my-table-pagination
+  [dataLength]="data.length"
+  (rowsToDisplayChanged)="rowsToDisplayChanged($event)"
+></my-table-pagination>

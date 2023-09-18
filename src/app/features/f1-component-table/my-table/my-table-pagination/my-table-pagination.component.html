@@ -1,1 +1,9 @@
-<p>my-table-pagination works!</p>
+<div class="container">
+  <div>Page {{ pageNumber }} of {{ totalNumbeOfPages }}</div>
+  <button mat-button (click)="onBack()" [disabled]="isButtonDisabled.back">
+    back
+  </button>
+  <button mat-button (click)="onNext()" [disabled]="isButtonDisabled.next">
+    next
+  </button>
+</div>

@@ -22,7 +22,7 @@ const DATA = [
   templateUrl: './f1-component-table.component.html',
   styleUrls: ['./f1-component-table.component.scss'],
 })
-export class BasicsComponent {
+export class F1TableComponent {
   columns = COLUMNS;
   data = DATA;
 }

@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-my-table',
+  selector: 'my-table',
   templateUrl: './my-table.component.html',
   styleUrls: ['./my-table.component.scss'],
 })
@@ -10,6 +10,7 @@ export class MyTableComponent implements OnInit {
   @Input() data!: any[];
 
   sortedData: (number | string)[][] = [];
+  filteredData: (number | string)[][] = [];
 
   constructor() {}
 
@@ -25,5 +26,10 @@ export class MyTableComponent implements OnInit {
       });
       return toYield;
     });
+  }
+
+  rowsToDisplayChanged(range: [number, number]): void {
+    console.log(range);
+    this.filteredData = this.sortedData.slice(range[0], range[1]);
   }
 }
