@@ -1,0 +1,17 @@
+<table>
+  <tr>
+    <td *ngFor="let c of columns">
+      <div class="header">
+        {{ c.headerName }}
+      </div>
+    </td>
+  </tr>
+
+  <tr *ngFor="let row of sortedData">
+    <td *ngFor="let d of row">
+      <div class="content">
+        {{ d }}
+      </div>
+    </td>
+  </tr>
+</table>
