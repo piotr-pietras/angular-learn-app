@@ -6,14 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { F1TableComponentModule } from './features/f1-component-table/f1-component-table.module';
 import { F2NgRoutingModule } from './features/f2-ng-routing/f2-ng-routing.module';
+import { F3HoverTooltipDirectiveModule } from './features/f3-hover-tooltip-directive/f3-hover-tooltip-directive.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     F1TableComponentModule,
     F2NgRoutingModule,
+    F3HoverTooltipDirectiveModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

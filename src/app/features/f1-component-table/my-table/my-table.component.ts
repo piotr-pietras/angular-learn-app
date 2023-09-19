@@ -29,7 +29,6 @@ export class MyTableComponent implements OnInit {
   }
 
   rowsToDisplayChanged(range: [number, number]): void {
-    console.log(range);
     this.filteredData = this.sortedData.slice(range[0], range[1]);
   }
 }

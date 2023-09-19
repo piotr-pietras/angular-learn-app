@@ -1,0 +1,13 @@
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  font-size: large;
+  font-weight: bold;
+  &:hover{
+    scale: 1.05;
+  }
+  transition: scale 0.25s;
+}
