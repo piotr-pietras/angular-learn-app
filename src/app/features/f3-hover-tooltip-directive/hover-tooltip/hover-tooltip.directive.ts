@@ -2,6 +2,7 @@ import {
   ComponentRef,
   Directive,
   HostListener,
+  Input,
   ViewContainerRef,
 } from '@angular/core';
 import { MyTinyTooltipComponent } from './my-tiny-tooltip/my-tiny-tooltip.component';
@@ -10,17 +11,17 @@ import { MyTinyTooltipComponent } from './my-tiny-tooltip/my-tiny-tooltip.compon
   selector: '[myHoverTooltip]',
 })
 export class HoverTooltipDirective {
+  @Input() myHoverTooltip = '';
   ref: ComponentRef<MyTinyTooltipComponent> | undefined;
 
   constructor(private viewContainer: ViewContainerRef) {}
 
   @HostListener('mouseenter') onOver() {
-    console.log('enter');
     this.ref = this.viewContainer.createComponent(MyTinyTooltipComponent);
+    this.ref?.setInput('color', this.myHoverTooltip);
   }
 
   @HostListener('mouseleave') onLeave() {
-    console.log('leave');
     this.ref = undefined;
     this.viewContainer.remove();
   }
