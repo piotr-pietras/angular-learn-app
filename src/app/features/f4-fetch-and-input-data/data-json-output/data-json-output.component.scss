@@ -1,0 +1,8 @@
+.container {
+  height: 100%;
+  background-color: rgb(240, 240, 240);
+  &:hover {
+    scale: 1.05;
+  }
+  transition: scale 0.25s;
+}
