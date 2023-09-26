@@ -1,0 +1,25 @@
+<h2>Delete Data</h2>
+
+<form class="container">
+  <mat-form-field>
+    <mat-label>ID</mat-label>
+    <input
+      type="number"
+      matInput
+      [formControl]="idFormControl"
+      [disabled]="isPending"
+    />
+    <mat-error *ngIf="idFormControl.hasError('pattern')">
+      Number must contains only <strong>digits</strong>
+    </mat-error>
+    <mat-error *ngIf="idFormControl.hasError('required')">
+      Number is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+</form>
+
+<button mat-raised-button [disabled]="isDeleteDisabled()" (click)="onClick()">
+  <div class="button-content">
+    <mat-spinner *ngIf="isPending" [diameter]="16" /> <span>delete data</span>
+  </div>
+</button>

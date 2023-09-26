@@ -4,19 +4,21 @@ import { F4FetchAndInputDataComponent } from './f4-fetch-and-input-data.componen
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { DataFormComponent } from './data-form/data-form.component';
+import { DataFormPostComponent } from './data-form-post/data-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DataJsonOutputComponent } from './data-json-output/data-json-output.component';
 import { MatButtonModule } from '@angular/material/button';
 import { F4ServerApiService } from 'src/app/services/f4-server-api.service';
 import { HttpClient } from '@angular/common/http';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { DataFormDeleteComponent } from './data-form-delete/data-form-delete.component';
 
 @NgModule({
   declarations: [
     F4FetchAndInputDataComponent,
-    DataFormComponent,
+    DataFormPostComponent,
     DataJsonOutputComponent,
+    DataFormDeleteComponent,
   ],
   imports: [
     CommonModule,

@@ -3,11 +3,11 @@ import { FormControl, Validators } from '@angular/forms';
 import { F4ServerApiService } from 'src/app/services/f4-server-api.service';
 
 @Component({
-  selector: 'app-data-form',
-  templateUrl: './data-form.component.html',
-  styleUrls: ['./data-form.component.scss'],
+  selector: 'app-data-form-post',
+  templateUrl: './data-form-post.component.html',
+  styleUrls: ['./data-form-post.component.scss'],
 })
-export class DataFormComponent implements OnInit {
+export class DataFormPostComponent implements OnInit {
   dataValue: string | null = null;
   numberValue: string | null = null;
   dataFormControl = new FormControl('', [

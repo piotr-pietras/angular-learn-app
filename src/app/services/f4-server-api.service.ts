@@ -37,4 +37,16 @@ export class F4ServerApiService {
         },
       });
   }
+
+  deleteData(id: string) {
+    this.isPending.next(true);
+    this.http
+      .delete(`${environment.apiURL}/feature4/${id}`)
+      .pipe(delay(2000))
+      .subscribe({
+        complete: () => {
+          this.fetchData();
+        },
+      });
+  }
 }
