@@ -15,15 +15,25 @@ export class F4ServerApiService {
     this.isPending.next(true);
     this.http
       .get(`${environment.apiURL}/feature4`)
-      .pipe(delay(1000))
+      .pipe(delay(2000))
       .subscribe({
         next: (v) => {
-          console.log(v);
           this.data.next(v);
         },
         complete: () => {
-          console.log('complete');
           this.isPending.next(false);
+        },
+      });
+  }
+
+  postData(data: string, number: string) {
+    this.isPending.next(true);
+    this.http
+      .post(`${environment.apiURL}/feature4`, { data, number })
+      .pipe(delay(2000))
+      .subscribe({
+        complete: () => {
+          this.fetchData();
         },
       });
   }

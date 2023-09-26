@@ -1,7 +1,12 @@
 <form class="container">
   <mat-form-field>
     <mat-label>Data</mat-label>
-    <input type="text" matInput [formControl]="dataFormControl" />
+    <input
+      type="text"
+      matInput
+      [formControl]="dataFormControl"
+      [disabled]="isPending"
+    />
     <mat-error *ngIf="dataFormControl.hasError('minlength')">
       Data must contains at least <strong>3 characters</strong>
     </mat-error>
@@ -12,7 +17,12 @@
 
   <mat-form-field>
     <mat-label>Number</mat-label>
-    <input type="number" matInput [formControl]="numberFormControl" />
+    <input
+      type="number"
+      matInput
+      [formControl]="numberFormControl"
+      [disabled]="isPending"
+    />
     <mat-error *ngIf="numberFormControl.hasError('pattern')">
       Number must contains only <strong>digits</strong>
     </mat-error>
@@ -22,4 +32,8 @@
   </mat-form-field>
 </form>
 
-<button [disabled]="isPostDisabled()" mat-raised-button>post data</button>
+<button mat-raised-button [disabled]="isPostDisabled()" (click)="onClick()">
+  <div class="button-content">
+    <mat-spinner *ngIf="isPending" [diameter]="16" /> <span>post data</span>
+  </div>
+</button>

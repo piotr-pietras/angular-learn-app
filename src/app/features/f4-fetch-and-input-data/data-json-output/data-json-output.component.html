@@ -1,4 +1,7 @@
-<mat-card class="container" *ngIf="isPending === false; else progress">
+<mat-card
+  class="container"
+  [ngStyle]="{ filter: isPending ? 'contrast(10%)' : 'contrast(100%)' }"
+>
   <pre>{{ data | json }}</pre>
 </mat-card>
-<ng-template #progress><mat-spinner /></ng-template>
+<mat-spinner class="spinner" *ngIf="isPending" />
