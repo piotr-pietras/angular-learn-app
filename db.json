@@ -1,109 +1,14 @@
 {
   "feature4": [
     {
-      "id": 2,
-      "data": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
-      "number": 2022
+      "data": "test",
+      "number": 123,
+      "id": 1
     },
     {
-      "data": "sdf",
-      "number": 123,
+      "data": "12312312",
+      "number": 3241234,
       "id": 3
-    },
-    {
-      "data": "sdf",
-      "number": 123,
-      "id": 4
-    },
-    {
-      "data": "sdfgedfs",
-      "number": 34534,
-      "id": 5
-    },
-    {
-      "data": "dghsdf",
-      "number": 456,
-      "id": 6
-    },
-    {
-      "data": "sadfdas",
-      "number": 12432,
-      "id": 7
-    },
-    {
-      "data": "fdg",
-      "number": 564,
-      "id": 8
-    },
-    {
-      "data": "sadfasd",
-      "number": 4234,
-      "id": 9
-    },
-    {
-      "data": "asadfasd",
-      "number": 2343214,
-      "id": 10
-    },
-    {
-      "data": "2134123",
-      "number": 1234312,
-      "id": 11
-    },
-    {
-      "data": "dfgdsf",
-      "number": 345432,
-      "id": 12
-    },
-    {
-      "data": "dfgdf",
-      "number": 345234,
-      "id": 13
-    },
-    {
-      "data": "dfgdsf",
-      "number": 3425,
-      "id": 14
-    },
-    {
-      "data": "reter",
-      "number": 345234,
-      "id": 15
-    },
-    {
-      "data": "3245",
-      "number": 234312,
-      "id": 16
-    },
-    {
-      "data": "sdfgsdf",
-      "number": 5426,
-      "id": 17
-    },
-    {
-      "data": "dfgdsf",
-      "number": 4356345,
-      "id": 18
-    },
-    {
-      "data": "dfghdgf",
-      "number": 4536,
-      "id": 19
-    },
-    {
-      "data": "3245",
-      "number": 3425,
-      "id": 20
-    },
-    {
-      "data": "345643",
-      "number": 64536354,
-      "id": 21
-    },
-    {
-      "data": "dsfdsaf",
-      "number": 4324,
-      "id": 22
     }
   ]
 }

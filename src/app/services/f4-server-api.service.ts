@@ -23,6 +23,10 @@ export class F4ServerApiService {
         complete: () => {
           this.isPending.next(false);
         },
+        error: (err) => {
+          this.isPending.next(false);
+          window.alert(JSON.stringify(err));
+        },
       });
   }
 
@@ -35,6 +39,10 @@ export class F4ServerApiService {
         complete: () => {
           this.fetchData();
         },
+        error: (err) => {
+          this.isPending.next(false);
+          window.alert(JSON.stringify(err));
+        },
       });
   }
 
@@ -46,6 +54,10 @@ export class F4ServerApiService {
       .subscribe({
         complete: () => {
           this.fetchData();
+        },
+        error: (err) => {
+          this.isPending.next(false);
+          window.alert(JSON.stringify(err));
         },
       });
   }
